@@ -1,0 +1,63 @@
+/* Zera as margens padrão do navegador e define a fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centraliza todo o conteúdo no meio da tela */
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+}
+
+/* Define a largura máxima da nossa lista para ficar parecida com um celular */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Espaçamento dos títulos */
+h1 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Organiza os botões em uma coluna (um embaixo do outro) */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre cada botão */
+}
+
+/* O design de cada botão de link */
+.links a {
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none; /* Tira o sublinhado padrão dos links */
+    padding: 15px;
+    border-radius: 8px; /* Arredonda as pontas do botão */
+    border: 1px solid #ccc;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Deixa a mudança de cor suave */
+    display: flex;
+    justify-content: center; /* Centraliza tudo no meio do botão */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    gap: 10px; /* Cria um espaço de 10 pixels entre o ícone e a palavra */
+}
+
+/* O efeito visual de quando passamos o mouse (ou o dedo) por cima */
+.links a:hover {
+    background-color: #e0e0e0;
+}
